@@ -1,0 +1,29 @@
+    <table class="table" id="reviews-table">
+        <tr>
+            <th>Date</th>
+            <th>Commentaire</th>
+            <th>Label</th>
+        </tr>
+    {% for id, review in results.iterrows() %}
+        <tr id-review="{{ id }}" class="">
+            <td><i class="fas fa-times remove-review"></i></td>
+            <td>{{ review.text }}
+                {% autoescape false %}
+                  {{ lime_review(review) }}
+                {% endautoescape %}
+            </td>
+            <td class="col-1">
+                <div class="row">
+                    <div class="text-center col-6">
+                        {{ review.predict_0|round(2) }}<br>
+                        <i class="vote-down fas fa-thumbs-down fa-2x" vote="down" review-id="{{ id }}"></i>
+                    </div>
+                    <div class="text-center col-6">
+                        {{ review.predict_1|round(2) }}
+                        <i class="vote-up fas fa-thumbs-up fa-2x" vote="up" review-id="{{ id }}"></i>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>

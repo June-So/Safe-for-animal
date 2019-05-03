@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 p-5">
+            <form action="" method="post">
+                <label for="society">Votre recherche: </label>
+                <input type="text" name="society" id="society">
+                <input type="submit" value="GO !">
+            </form>
+            <div class="">
+            <h2 class="my-3">Sociétés</h2>
+            <table class="table table-sm">
+                {% for society in societys %}
+                <tr>
+                    <td>{{ society.name }}</td>
+                    <td>{{ society.reviews|length }} avis</td>
+                    <td><a href="{{ url_for('remove_society', society=society.id) }}" class="btn btn-danger btn-sm">X</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        </div>
+
+    </div>
+{% endblock %}

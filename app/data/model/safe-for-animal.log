@@ -1,0 +1,33 @@
+[{
+  "data": "[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n",
+  "stream_name": "stderr",
+  "time": 2.825819371999387
+},{
+  "data": "[NbConvertApp] Executing notebook with kernel: python3\n",
+  "stream_name": "stderr",
+  "time": 2.8781386999999086
+},{
+  "data": "2019-04-28 18:40:31.926714: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2300000000 Hz\n",
+  "stream_name": "stderr",
+  "time": 23.586418963999677
+},{
+  "data": "2019-04-28 18:40:31.929869: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55df8d42b760 executing computations on platform Host. Devices:\n2019-04-28 18:40:31.929919: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>\n",
+  "stream_name": "stderr",
+  "time": 23.589503907000108
+},{
+  "data": "[NbConvertApp] Writing 3501712 bytes to __notebook__.ipynb\n",
+  "stream_name": "stderr",
+  "time": 34.53023193000081
+},{
+  "data": "[NbConvertApp] Converting notebook __notebook__.ipynb to html\n",
+  "stream_name": "stderr",
+  "time": 37.02137231699999
+},{
+  "data": "[NbConvertApp] Support files will be in __results___files/\n[NbConvertApp] Making directory __results___files\n",
+  "stream_name": "stderr",
+  "time": 37.788262199999735
+},{
+  "data": "[NbConvertApp] Making directory __results___files\n[NbConvertApp] Making directory __results___files\n[NbConvertApp] Writing 2773688 bytes to __results__.html\n",
+  "stream_name": "stderr",
+  "time": 37.79039393899984
+}]

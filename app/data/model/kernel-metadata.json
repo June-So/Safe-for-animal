@@ -1,0 +1,13 @@
+{
+  "id": "powpowkow/INSERT_KERNEL_SLUG_HERE",
+  "title": "INSERT_TITLE_HERE",
+  "code_file": "INSERT_CODE_FILE_PATH_HERE",
+  "language": "INSERT_LANGUAGE_HERE",
+  "kernel_type": "INSERT_KERNEL_TYPE_HERE",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "false",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

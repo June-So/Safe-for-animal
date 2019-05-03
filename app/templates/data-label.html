@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="row py-3">
+        <div class="col-6">
+            <form id="form_filter_label" name="filter_label" class="" action="">
+                <input type="checkbox" name="search" value="1">
+                <label>Positif</label>
+                <input type="checkbox" name="search" value="0">
+                <label>Négatif</label>
+                <input type="checkbox" name="search" value="None">
+                <label>Non labelisé</label>
+              </form>
+        </div>
+        <div class="col-2">
+           <button id="predict-btn" class="btn btn-primary">Predict</button>
+        </div>
+    </div>
+    <div class="row p-4">
+    <table class="table" id="reviews-table">
+        <tr>
+            <th>Date</th>
+            <th>Commentaire</th>
+            <th>Label</th>
+        </tr>
+    {% for review in reviews %}
+        <tr id-review="{{ review.id }}" class="{{ class_label_review(review) }}">
+            <td><i class="fas fa-times remove-review"></i></td>
+            <td>{{ review.text }}</td>
+            <td class="col-1">
+                <i class="vote-down fas fa-thumbs-down fa-2x" vote="down" review-id="{{ review.id }}"></i>
+                <i class="vote-up fas fa-thumbs-up fa-2x" vote="up" review-id="{{ review.id }}"></i>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+        </div>
+{% endblock %}

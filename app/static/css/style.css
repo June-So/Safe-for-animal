@@ -1,0 +1,22 @@
+.vote-down:hover, .label-neg .vote-down{
+    color: red;
+}
+
+.vote-up:hover, .label-pos .vote-up{
+    color: green;
+}
+
+.label-pos .vote-down, .label-neg .vote-up{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.label-pos{
+    background-color: #aaf1b8;
+}
+
+.label-neg{
+    background-color: #f59090;
+}
+
+
